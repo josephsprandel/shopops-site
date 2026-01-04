@@ -40,14 +40,14 @@ export default function Hero() {
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-          className="mb-12"
+          className="mb-16"
         >
           <Image 
             src="/shopops1-1.png" 
             alt="ShopOps" 
-            width={600} 
-            height={200}
-            className="mx-auto"
+            width={400} 
+            height={120}
+            className="mx-auto brightness-0 invert opacity-90"
             priority
           />
         </motion.div>
@@ -57,12 +57,12 @@ export default function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
-          className="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight"
+          className="text-6xl md:text-8xl font-bold text-white mb-8 leading-tight tracking-tight"
         >
-          AI-Powered Shop Management
+          The Future of
           <br />
           <span className="bg-gradient-to-r from-teal-400 to-cyan-400 bg-clip-text text-transparent">
-            Built for the Future
+            Shop Management
           </span>
         </motion.h1>
 
@@ -71,9 +71,9 @@ export default function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.4 }}
-          className="text-xl md:text-2xl text-slate-300 mb-12 max-w-3xl mx-auto"
+          className="text-2xl md:text-3xl text-slate-300 mb-16 max-w-4xl mx-auto font-light"
         >
-          Replace legacy systems with intelligent automation. Photo intake, AI service recommendations, and predictive maintenance—all in one platform.
+          AI-native platform built for automotive excellence
         </motion.p>
 
         {/* CTA Buttons */}
@@ -81,19 +81,17 @@ export default function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.6 }}
-          className="flex flex-col sm:flex-row gap-4 justify-center"
+          className="flex flex-col sm:flex-row gap-6 justify-center"
         >
           <a
-            href="https://github.com/jsprandel/shopops3"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="px-8 py-4 bg-gradient-to-r from-teal-500 to-cyan-500 text-white font-semibold rounded-lg hover:from-teal-600 hover:to-cyan-600 transition-all transform hover:scale-105 shadow-lg"
+            href="#contact"
+            className="px-10 py-5 bg-gradient-to-r from-teal-500 to-cyan-500 text-white text-lg font-semibold rounded-lg hover:from-teal-600 hover:to-cyan-600 transition-all transform hover:scale-105 shadow-2xl"
           >
-            View on GitHub
+            Request Demo
           </a>
           <a
-            href="#features"
-            className="px-8 py-4 bg-slate-800 text-white font-semibold rounded-lg hover:bg-slate-700 transition-all border border-slate-600"
+            href="#platform"
+            className="px-10 py-5 bg-slate-800/50 backdrop-blur text-white text-lg font-semibold rounded-lg hover:bg-slate-700/50 transition-all border border-slate-600"
           >
             Learn More
           </a>

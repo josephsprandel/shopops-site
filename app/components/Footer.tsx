@@ -1,41 +1,38 @@
 export default function Footer() {
   return (
-    <footer className="bg-slate-950 text-slate-400 py-12">
+    <footer className="bg-slate-950 text-slate-400 py-16">
       <div className="max-w-7xl mx-auto px-6">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
-          {/* About */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
           <div>
-            <h3 className="text-white font-bold mb-4">ShopOps</h3>
-            <p className="text-sm leading-relaxed">
-              AI-powered shop management built for auto repair shops tired of legacy software.
+            <h3 className="text-white font-bold text-xl mb-4">ShopOps</h3>
+            <p className="text-base leading-relaxed">
+              Enterprise automotive intelligence platform
             </p>
           </div>
 
-          {/* Links */}
           <div>
-            <h3 className="text-white font-bold mb-4">Resources</h3>
-            <ul className="space-y-2 text-sm">
-              <li><a href="https://github.com/jsprandel/shopops3" className="hover:text-teal-400 transition-colors">GitHub</a></li>
-              <li><a href="#features" className="hover:text-teal-400 transition-colors">Features</a></li>
-              <li><a href="mailto:service@autohousenwa.com" className="hover:text-teal-400 transition-colors">Contact</a></li>
+            <h3 className="text-white font-bold text-xl mb-4">Platform</h3>
+            <ul className="space-y-3 text-base">
+              <li><a href="#platform" className="hover:text-teal-400 transition-colors">Features</a></li>
+              <li><a href="#integrations" className="hover:text-teal-400 transition-colors">Integrations</a></li>
+              <li><a href="#api" className="hover:text-teal-400 transition-colors">API Access</a></li>
             </ul>
           </div>
 
-          {/* Built by */}
           <div>
-            <h3 className="text-white font-bold mb-4">Built By</h3>
-            <p className="text-sm">
-              <a href="https://autohousenwa.com" className="hover:text-teal-400 transition-colors">
-                AutoHouse Automotive
+            <h3 className="text-white font-bold text-xl mb-4">Company</h3>
+            <p className="text-base">
+              <a href="mailto:partnerships@shopops.ai" className="hover:text-teal-400 transition-colors">
+                partnerships@shopops.ai
               </a>
               <br />
-              Northwest Arkansas
+              <span className="text-slate-500">Northwest Arkansas</span>
             </p>
           </div>
         </div>
 
-        <div className="border-t border-slate-800 pt-8 text-center text-sm">
-          <p>© {new Date().getFullYear()} ShopOps. Open source under MIT License.</p>
+        <div className="border-t border-slate-800 pt-10 text-center">
+          <p className="text-base">© {new Date().getFullYear()} ShopOps. All rights reserved.</p>
         </div>
       </div>
     </footer>

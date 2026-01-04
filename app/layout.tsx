@@ -5,11 +5,11 @@ import './globals.css';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'ShopOps | AI-Powered Shop Management',
-  description: 'Replace legacy shop management systems with AI automation. Photo intake, service recommendations, and intelligent workflows.',
+  title: 'ShopOps | Enterprise Automotive Intelligence',
+  description: 'AI-native shop management platform built for the modern automotive service industry. Enterprise-grade intelligence, real-time integrations, predictive maintenance.',
   openGraph: {
-    title: 'ShopOps | AI-Powered Shop Management',
-    description: 'Open source shop management with AI automation',
+    title: 'ShopOps | Enterprise Automotive Intelligence',
+    description: 'The future of shop management software',
     type: 'website',
   },
 };
