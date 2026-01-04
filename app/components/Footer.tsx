@@ -5,7 +5,9 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12 text-center">
           {/* About */}
           <div className="flex flex-col items-center">
-            <h3 className="text-white font-bold text-xl mb-4">ShopOps</h3>
+            <a href="http://70.182.167.33:3000/" target="_blank" rel="noopener noreferrer" className="text-white font-bold text-xl mb-4 hover:text-teal-400 transition-colors">
+              ShopOps
+            </a>
             <p className="text-base leading-relaxed max-w-xs">
               Enterprise automotive intelligence platform
             </p>
