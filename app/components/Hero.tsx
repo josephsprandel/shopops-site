@@ -7,7 +7,7 @@ export default function Hero() {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-slate-900 via-slate-800 to-teal-900">
       {/* Animated gradient orbs */}
-      <div className="absolute inset-0 overflow-hidden">
+      <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <motion.div
           className="absolute -top-1/2 -left-1/2 w-full h-full bg-teal-500/20 rounded-full blur-3xl"
           animate={{
@@ -34,20 +34,20 @@ export default function Hero() {
         />
       </div>
 
-      <div className="relative z-10 max-w-7xl mx-auto px-6 py-24 text-center">
+      <div className="relative z-10 w-full max-w-7xl mx-auto px-8 md:px-12 lg:px-16 py-24 text-center">
         {/* Logo */}
         <motion.div
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-          className="mb-16"
+          className="mb-12 flex justify-center"
         >
           <Image 
-            src="/shopops1-1.png" 
+            src="/ShopOps.png" 
             alt="ShopOps" 
-            width={400} 
-            height={120}
-            className="mx-auto brightness-0 invert opacity-90"
+            width={640} 
+            height={240}
+            className="w-auto h-auto max-w-2xl"
             priority
           />
         </motion.div>
@@ -96,23 +96,23 @@ export default function Hero() {
             Learn More
           </a>
         </motion.div>
-
-        {/* Scroll indicator */}
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 1, delay: 1 }}
-          className="absolute bottom-8 left-1/2 transform -translate-x-1/2"
-        >
-          <motion.div
-            animate={{ y: [0, 10, 0] }}
-            transition={{ duration: 2, repeat: Infinity }}
-            className="w-6 h-10 border-2 border-slate-400 rounded-full flex items-start justify-center p-2"
-          >
-            <div className="w-1 h-3 bg-slate-400 rounded-full" />
-          </motion.div>
-        </motion.div>
       </div>
+
+      {/* Scroll indicator */}
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 1, delay: 1 }}
+        className="absolute bottom-8 left-1/2 transform -translate-x-1/2"
+      >
+        <motion.div
+          animate={{ y: [0, 10, 0] }}
+          transition={{ duration: 2, repeat: Infinity }}
+          className="w-6 h-10 border-2 border-slate-400 rounded-full flex items-start justify-center p-2"
+        >
+          <div className="w-1 h-3 bg-slate-400 rounded-full" />
+        </motion.div>
+      </motion.div>
     </section>
   );
 }

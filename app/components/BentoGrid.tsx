@@ -43,8 +43,8 @@ const features = [
 
 export default function BentoGrid() {
   return (
-    <section id="platform" className="py-32 bg-slate-50">
-      <div className="max-w-7xl mx-auto px-6">
+    <section id="platform" className="py-32 bg-slate-50 overflow-hidden">
+      <div className="max-w-7xl mx-auto px-8 md:px-12 lg:px-16">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -60,7 +60,7 @@ export default function BentoGrid() {
           </p>
         </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
           {features.map((feature, index) => (
             <motion.div
               key={feature.title}
@@ -68,21 +68,19 @@ export default function BentoGrid() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
-              className={`
-                ${feature.size === 'large' ? 'md:col-span-2' : 'col-span-1'}
-                bg-white rounded-3xl p-10 shadow-xl hover:shadow-2xl transition-all
-                border border-slate-100 relative overflow-hidden group
-              `}
+              className="bg-white rounded-3xl shadow-xl hover:shadow-2xl transition-all border border-slate-100 relative overflow-hidden group"
             >
               {/* Gradient accent bar */}
               <div className={`absolute top-0 left-0 w-2 h-full bg-gradient-to-b ${feature.gradient}`} />
               
-              <h3 className="text-3xl font-bold text-slate-900 mb-4 pl-4">
-                {feature.title}
-              </h3>
-              <p className="text-lg text-slate-600 leading-relaxed pl-4">
-                {feature.description}
-              </p>
+              <div className="p-6 md:p-8 pl-10 md:pl-12">
+                <h3 className="text-2xl md:text-3xl font-bold text-slate-900 mb-4">
+                  {feature.title}
+                </h3>
+                <p className="text-base md:text-lg text-slate-600 leading-relaxed">
+                  {feature.description}
+                </p>
+              </div>
             </motion.div>
           ))}
         </div>

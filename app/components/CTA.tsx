@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 export default function CTA() {
   return (
     <section className="py-32 bg-gradient-to-br from-slate-900 to-teal-900">
-      <div className="max-w-4xl mx-auto px-6 text-center">
+      <div className="max-w-4xl mx-auto px-8 md:px-12 lg:px-16 text-center">
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
