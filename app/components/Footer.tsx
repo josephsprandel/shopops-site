@@ -15,7 +15,7 @@ export default function Footer() {
 
           {/* Links */}
           <div className="flex flex-col items-center">
-            <h3 className="text-white font-bold text-xl mb-4">Platform</h3>
+            <a href="http://70.182.167.33:4000/" target="_blank" rel="noopener noreferrer" className="text-white font-bold text-xl mb-4 hover:text-teal-400 transition-colors">Platform</a>
             <ul className="space-y-3 text-base">
               <li><a href="#platform" className="hover:text-teal-400 transition-colors">Features</a></li>
               <li><a href="#integrations" className="hover:text-teal-400 transition-colors">Integrations</a></li>
