@@ -6,7 +6,7 @@ export default function Footer() {
           {/* About */}
           <div className="flex flex-col items-center">
             <a href="http://70.182.167.33:3000/" target="_blank" rel="noopener noreferrer" className="text-white font-bold text-xl mb-4 hover:text-teal-400 transition-colors">
-              ShopOps
+              RO Engine
             </a>
             <p className="text-base leading-relaxed max-w-xs">
               Enterprise automotive intelligence platform
@@ -35,7 +35,7 @@ export default function Footer() {
         </div>
 
         <div className="border-t border-slate-800 pt-10 text-center">
-          <p className="text-base">© {new Date().getFullYear()} ShopOps. All rights reserved.</p>
+          <p className="text-base">© {new Date().getFullYear()} RO Engine. All rights reserved.</p>
         </div>
       </div>
     </footer>

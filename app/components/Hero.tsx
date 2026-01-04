@@ -43,8 +43,8 @@ export default function Hero() {
           className="mb-12 flex justify-center"
         >
           <Image 
-            src="/ShopOps.png" 
-            alt="ShopOps" 
+            src="/roengine.png" 
+            alt="RO Engine" 
             width={640} 
             height={240}
             className="w-auto h-auto max-w-2xl"
